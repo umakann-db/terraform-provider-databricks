@@ -76,7 +76,7 @@ func TestGcpAccaWorkspaces(t *testing.T) {
 				workspace_name  = "{env.TEST_PREFIX}-{var.RANDOM}"
 				location        = "{env.GOOGLE_REGION}"
 		
-				cloud_resource_bucket {
+				cloud_resource_container {
 					gcp {
 						project_id = "{env.GOOGLE_PROJECT}"
 					}
